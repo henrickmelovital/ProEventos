@@ -1,0 +1,22 @@
+1º: Intalar o Entity Framework Core:
+    1.1º: dotnet tool install --global dotnet-ef;
+
+2º: Baixar os seguintes Pacotes:
+    2.1º: dotnet add package Microsoft.EntityFrameworkCore;
+    2.2º: dotnet add package Microsoft.EntityFrameworkCore.Design;
+    2.3º: dotnet add package Microsoft.EntityFrameworkCore.Tools;
+    2.4º: dotnet add package Microsoft.EntityFrameworkCore.Sqlite.Core;
+    2.5º: dotnet add package Microsoft.EntityFrameworkCore.SqlServer;
+
+3º: Criar o Context:
+    3.1º: Criar a Pasta 'Data';
+    3.2º: Criar 'AppDbContext';
+    3.3º: Registrar o serviço dentro de Startup;
+    3.4º: Ajustar o 'AppSettings.json';
+
+4º: Criando as Migrations:
+    4.1º: 'dotnet ef migrations add Initial -o Data/Migrations';
+    4.2º: 'dotnet ef database update';
+
+5º: Fazer injeção de Dependência:
+    5.1º: Ajustar o 'EventoController';

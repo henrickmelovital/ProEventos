@@ -1,0 +1,21 @@
+1º Global.Json - Permite Definir a versão do .NET que vai ser usada;
+    1.1º: 'dotnet new globaljson --sdk-version 5.0.40' - cria o global.json
+
+2º: Criando o projeto:
+    2.1º: 'dotnet new webapi -n ProEventos.API' - Cria o projeto e o '-n' determina o nome do projeto;
+
+3º: Criando certificado HTTPS:
+    3.1º: 'dotnet dev-certs https --trust';
+    3.2º: Rodar usando o Hot reaload - dotnet watch run;
+
+4º: Ajustando os Controller;
+    4.1º: Ajustar o WeatherForecastController para EventoController;
+    4.2º: Ajustar os códigos;
+    4.2º: Excluir o classe .cs;
+
+5º: Postaman:
+    5.1º: Criação do Método Post;
+
+6º: Evento Model:
+    6.1º: Criar uma pasta Models
+    3.2º: Criar o primeiro Model - 'Evento.cs';

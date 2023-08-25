@@ -1,0 +1,39 @@
+.net 5
+npm install -g @angular/cli@12
+download node
+download visual studio 
+download Postman 
+
+Extensões C#
+C# 
+C# Extensions
+C# xml documentation comments
+nuget gallery
+nuget package manager
+
+Link do Projeto:
+git@github.com:vsandrade/ProEventos.git
+
+Verificando Instalações:
+dotnet --info
+dotnet --list-sdks
+dotnet tool list -g : Lista as versões do EF Core instaladas 
+
+npm install - dentro da pasta ProEventos-App
+ng serve -o - roda a aplicação
+Caso de um erro de assinatura no projeto rodar o seguinte comando: 'Set-ExecutionPolicy RemoteSigned'
+
+Criar pasta 'Resources' dentro de ProEventos.API
+Ajustar o 'Global.json' para versão do sdk do dotnet 
+
+Intalar a versão especifica do EFCore:
+dotnet tool install --global dotnet-ef --version 5.0.2
+
+Desinstalar uma versão do EFCore:
+dotnet tool uninstall --global dotnet-ef
+
+Update no banco de dados:
+dotnet ef database update -s ProEventos.API
+
+Rodando a aplicação:
+dotnet watch run

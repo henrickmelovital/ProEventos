@@ -1,0 +1,60 @@
+1º: Extensões:
+    1.1: Angular Essentials;
+    1.2º: Angular Files;
+
+2º: Criando Projeto:
+    2.1º: 'ng new <NomeDoProjeto>-App',
+    2.2º: Would you like to add Angular routing - Y;
+    2.3º: Which stylesheet format would you like to use: SCSS ou CSS;
+
+3º: Explicando Angular:
+    3.1º: 'ng serve' roda a aplicação;
+    3.2º: Primiero Arquivo a ser lido fica dentro de 'angular.json' "index" : 'src/index.html;
+    3.3º: Estrutura Básica;
+
+4º: Gerando Componentes:
+    4.1º: ng g c <NomeDoComponente>;
+    4.2º: Gerar com o Botão direito em cima da pasta app;
+
+5º: Usando Componentes:
+    5.1º: Criar os componentes html dentro da respectica pasta html;
+
+6º: Diretiva ngFor:
+    6.1º: Usando o component.ts para criar um objeto;
+    6.2º: Interpolação: <p>{{evento.Tema}}</p>
+    6.3º: Usando a diretiva ng-for, parecido com o laço 'for':
+        <div *ngFor="let evento of eventos">
+            <!--Interpolação-->
+            <p><b>Tema:</b>{{evento.Tema}}</p>
+            <p><b>Local:</b>{{evento.Local}}</p>
+        </div>
+
+7º: Request HTTP Angular:
+    7.1º: Criar o 'GetEventos', tem que usar o 'this.' no TypeScript;
+    7.2º.: 'ngOnInit', usado para fazer injeção de dependência;
+    7.3º: Fazer a importação da API dentro de app.module.ts:
+        7.3.1º: HttpClientModule;
+        7.3.2º: import { HttpClientModule } from '@angular/common/http'
+    7.4º: Fazer a instância dentro do construtor;
+    7.5º: Ajustar o 'getEventos';
+
+8º: Configurando CORS:
+    8.1º: Dentro da class Program.cs, fazer a instância do CORS:
+        8.1.1º: builder.Services.AddCors();
+        8.1.2º: 
+            app.UseCors(cors => cors
+                .AllowAnyHeader()
+                .AllowAnyMethod()
+                .AllowAnyOrigin()
+            );
+
+9º: Adicionando Bootstrap:
+    9.1º: Instalar Font Awesome: 'npm install --save @fortawesome/fontawesome-free'
+    9.2º: Instalar Bootstrap: 'npm install ngx-bootstrap --save' e 'npm install bootstrap@5'
+    9.3º: Fazer o import no styles.scss principal: 
+        9.3.1º: @import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+        9.3.2º: @import '../node_modules/ngx-bootstrap/datepicker/bs-datepicker.css';
+    9.4º: Fazer o import dentro de 'app.module.ts':
+        9.4.1º: Adicionar Dentro de app.modelu.ts:
+            9.4.2º: BrowserAnimationsModule;
+            9.4.3º: import { BrowserAnimationsModule } from '@angular/platform-browser/animations';

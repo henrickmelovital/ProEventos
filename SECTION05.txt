@@ -1,0 +1,27 @@
+1º: NavBar:
+    1.1º: Criar a nav;
+    1.2º: Usar o collapse:
+        1.2.1º: Colocar dentro de 'app.modele.ts' import { CollapseModule } from 'ngx-bootstrap/collapse' e CollapseModule.forRoot();
+        1.2.2º: Colocar dentro do código da 'nav.component.html': (click)="isCollapsed = !isCollapsed" e [collapse]="isCollapsed" [isAnimated]="true;
+        1.2.3º: Colocar dentro de 'nav.component.ts': isCollapsed = true;
+
+2º: Grid de Eventos, Binding e Interpolação:
+    2.1º: Ajustar a view 'eventos.component.html';
+    2.2º: Criar o ngFor;
+
+3º: Diretivas Estruturais:
+    3.1º: ngFor, ngIf, NgShow;
+    3.2º: Dentro das diretivas estruturais podemos usar Binding e Interpolação:
+        3.2.1º: {{eventos | json}} = mostra na tela as informaçõe em forma json;
+    
+4º: Usando *ngIf;
+
+5º: Propriedades Binding:
+    5.1º: Forma de armazenar uma imagem dentro do Angular é colocando dentro do 'assets'
+    5.2º: Ajustar a forma que a imagem é mostrada;
+    5.3º: Binding é similar a ViewBag, ViewData, DataBinding no ASP.NET Core;
+    5.4º: Ajustar o 'eventos.component.html' e 'eventos.component.ts';
+
+6º: Two-way data Binding:
+    6.1º: Importar o 'FormModule' dentro de 'app.modelu.ts' para usar o Two-Way data Binding;
+    6.2º:

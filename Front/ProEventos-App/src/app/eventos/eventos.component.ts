@@ -7,19 +7,52 @@ import { Component } from '@angular/core';
   styleUrls: ['./eventos.component.scss'],
 })
 export class EventosComponent {
+  // Necessario declarar que ele existe:
+  public eventos: any = [];
+  public eventosFiltrados: any;
 
-  public eventos: any ;
+  // Property Binding:
+  larguraImagem: number = 150;
+  margemImagem: number = 2;
+  mostrarImagem: boolean = true;
+  private _filtroLista: string = '';
 
-  constructor (private http: HttpClient) {}
+  public get filtroLista(): string {
+    return this._filtroLista;
+  }
 
-  ngOnInit(): void{
+  public set filtroLista(value: string) {
+    this._filtroLista = value;
+    this.eventosFiltrados = this.filtroLista ? this.filtrarEventos(this.filtroLista) : this.eventos;
+  }
+
+
+  filtrarEventos(filtrarPor: string): any {
+    filtrarPor = filtrarPor.toLocaleLowerCase();
+    return this.eventos.filter(
+      (evento: { tema: string; local: string }) =>
+        evento.tema.toLocaleLowerCase().indexOf(filtrarPor) !== -1 ||
+        evento.local.toLocaleLowerCase().indexOf(filtrarPor) !== -1
+    );
+  }
+
+  constructor(private http: HttpClient) {}
+
+  ngOnInit(): void {
     this.getEventos();
   }
 
-  public getEventos(): void{
+  alterarImagem() {
+    this.mostrarImagem = !this.mostrarImagem;
+  }
+
+  public getEventos(): void {
     this.http.get('http://localhost:5282/api/eventos').subscribe(
-      response => this.eventos = response,
-      error => console.log(error)
-    )
+      (response) => {
+        this.eventos = response;
+        this.eventosFiltrados = this.eventos;
+      },
+      (error) => console.log(error)
+    );
   }
 }

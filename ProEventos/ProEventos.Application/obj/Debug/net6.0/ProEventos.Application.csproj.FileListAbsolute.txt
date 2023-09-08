@@ -1,0 +1,17 @@
+C:\Users\Developer-00\Documents\AreaDeTeste\ProEventos\ProEventos.Application\bin\Debug\net6.0\ProEventos.Application.deps.json
+C:\Users\Developer-00\Documents\AreaDeTeste\ProEventos\ProEventos.Application\bin\Debug\net6.0\ProEventos.Application.dll
+C:\Users\Developer-00\Documents\AreaDeTeste\ProEventos\ProEventos.Application\bin\Debug\net6.0\ProEventos.Application.pdb
+C:\Users\Developer-00\Documents\AreaDeTeste\ProEventos\ProEventos.Application\bin\Debug\net6.0\ProEventos.Domain.dll
+C:\Users\Developer-00\Documents\AreaDeTeste\ProEventos\ProEventos.Application\bin\Debug\net6.0\ProEventos.Persistence.dll
+C:\Users\Developer-00\Documents\AreaDeTeste\ProEventos\ProEventos.Application\bin\Debug\net6.0\ProEventos.Domain.pdb
+C:\Users\Developer-00\Documents\AreaDeTeste\ProEventos\ProEventos.Application\bin\Debug\net6.0\ProEventos.Persistence.pdb
+C:\Users\Developer-00\Documents\AreaDeTeste\ProEventos\ProEventos.Application\obj\Debug\net6.0\ProEventos.Application.csproj.AssemblyReference.cache
+C:\Users\Developer-00\Documents\AreaDeTeste\ProEventos\ProEventos.Application\obj\Debug\net6.0\ProEventos.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Developer-00\Documents\AreaDeTeste\ProEventos\ProEventos.Application\obj\Debug\net6.0\ProEventos.Application.AssemblyInfoInputs.cache
+C:\Users\Developer-00\Documents\AreaDeTeste\ProEventos\ProEventos.Application\obj\Debug\net6.0\ProEventos.Application.AssemblyInfo.cs
+C:\Users\Developer-00\Documents\AreaDeTeste\ProEventos\ProEventos.Application\obj\Debug\net6.0\ProEventos.Application.csproj.CoreCompileInputs.cache
+C:\Users\Developer-00\Documents\AreaDeTeste\ProEventos\ProEventos.Application\obj\Debug\net6.0\ProEventos.Application.csproj.CopyComplete
+C:\Users\Developer-00\Documents\AreaDeTeste\ProEventos\ProEventos.Application\obj\Debug\net6.0\ProEventos.Application.dll
+C:\Users\Developer-00\Documents\AreaDeTeste\ProEventos\ProEventos.Application\obj\Debug\net6.0\refint\ProEventos.Application.dll
+C:\Users\Developer-00\Documents\AreaDeTeste\ProEventos\ProEventos.Application\obj\Debug\net6.0\ProEventos.Application.pdb
+C:\Users\Developer-00\Documents\AreaDeTeste\ProEventos\ProEventos.Application\obj\Debug\net6.0\ref\ProEventos.Application.dll

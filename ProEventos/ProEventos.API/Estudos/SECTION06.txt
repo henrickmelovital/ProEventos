@@ -1,0 +1,49 @@
+1º: Criar um '.sln' para a solução em camadas:
+    1.1º: para criar o arquivo .sln: 'dotnet new sln -n <NomeDoProjeto>'
+    1.2º: Para criar a camada de persistência 'dotnet new classlib -n <NomeDoProjeto>.Persistence'
+    1.2º: Para criar a camada de persistência 'dotnet new classlib -n <NomeDoProjeto>.Domain'
+    1.2º: Para criar a camada de persistência 'dotnet new classlib -n <NomeDoProjeto>.Application'
+
+2º: Referenciando os Projetos:
+    2.1º: Referência para Application 'dotnet sln <NomeDoProjeto>.sln add <NomeDoProjeto>.Application'
+    2.2º: Referência para Domain 'dotnet sln <NomeDoProjeto>.sln add <NomeDoProjeto>.Domain'
+    2.3º: Referência para Persistence 'dotnet sln <NomeDoProjeto>.sln add <NomeDoProjeto>.Persistence'
+    2.4º: Referência para Persistence 'dotnet sln <NomeDoProjeto>.sln add <NomeDoProjeto>.API'
+
+3º: Entidade de Domínio:
+    3.1º: Colocar o 'AppDbContext' Dentro de Persistence;
+    3.2º: Ajustar o 'AppDbContext';
+    3.3º: Criar a lógica para a tabela intermediária;
+
+4º: Migrations:
+    4.2º: Ajustar o que estiver errado;
+    4.1º: 'dotnet ef migrations add Initial -p ProEventos.Persistence -s ProEventos.API';
+
+5º: DataBase Update:
+    5.1º: Rodar um 'dotnet restore' para ver se a aplicação está funcionando;
+    5.2º: 'dotnet ef database update -s ProEventos.API' cria o banco de dados;
+
+6º: Interface de Persistência:
+    6.1º: Criar a interface 'IProEventosPersistence';
+
+7º: Persistência Classe:
+    7.1º: Criar a class 'ProEventosPersistence' e inserir dentro dela a interface 'ProEventosPersistence' e implementar os seus respectivos contratos;
+
+8º: Organizando Persistência:
+    8.1º: Divisão de 'IProEventosPersistence' em três sub interfaces, e alocação dentro uma pasta chamada 'Contratos';
+    8.2º: Fazer a divisão 'ProEventosPersistence' em três sub classes;
+ 
+9º: Evento Application:
+    9.1º: Criar a classe 'EventoService.cs' e ajustar o código;
+
+10º: Controller:
+    10.1º: Fazer a injeção de dependência;
+    10.2º: Ajustar os controladores;
+
+11º: Fazer os testes;
+    11.1º: Teste PUT e POST;
+    11.2º: Fazer o Tracking no 'EventoPersist.cs' e 'PalestrantePersist.cs';
+    11.3º: Tirar o ciclo de eventos dos objetos:
+    11.4º: Instalar o pacote denttro da API: 'Microsoft.AspNetCore.Mvc.NewtonsoftJson';
+
+12º: Config Cascadade Postaman:
